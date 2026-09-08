@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>AI Tree Disease Scanner</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+<div class="main-container">
+<div class="glass-card">
+<h1>🌳 AI Tree Disease Scanner</h1>
+<p class="subtitle">Scan Any Tree - Leaf / Flower / Branch</p>
+<form action="/predict" method="post" enctype="multipart/form-data">
+<div class="upload-box">
+<input type="file" name="file" accept="image/*" capture="environment"
+required>
+</div>
+<button class="scan-btn">🔍 Analyze Tree</button>
+</form>
+</div>
+</div>
+</body>
+</html>
