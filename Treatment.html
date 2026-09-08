@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Treatment Plan</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+<div class="main-container">
+<div class="glass-card">
+<h1>🌱 Recovery Plan</h1>
+<h2>{{ disease }}</h2>
+<div class="info-card">
+<p><strong>⏳ Estimated Recovery Time:</strong> {{ info.recovery_duration }}</p>
+</div>
+<div class="info-card">
+<p><strong>□ Recommended Treatment:</strong> {{ info.solution }}</p>
+</div>
+<div class="info-card">
+<h3>📅 Step-by-Step Plan</h3>
+<ul style="text-align:left; margin-top:10px;">
+{% for step in info.recovery_plan %}
+<li style="margin-bottom:8px;">{{ step }}</li>
+{% endfor %}
+</ul>
+</div>
+<a href="/" class="back-btn">← Scan Another Tree</a>
+</div>
+</div>
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+<title>Treatment Plan</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+<div class="main-container">
+<div class="glass-card">
+<h1>🌱 Recovery Plan</h1>
+<h2>{{ disease }}</h2>
+<div class="info-card">
+<p><strong>⏳ Estimated Recovery Time:</strong> {{ info.recovery_duration }}</p>
+</div>
+<div class="info-card">
+<p><strong>□ Recommended Treatment:</strong> {{ info.solution }}</p>
+</div>
+<div class="info-card">
+<h3>📅 Step-by-Step Plan</h3>
+<ul style="text-align:left; margin-top:10px;">
+{% for step in info.recovery_plan %}
+<li style="margin-bottom:8px;">{{ step }}</li>
+{% endfor %}
+</ul>
+</div>
+<a href="/" class="back-btn">← Scan Another Tree</a>
+</div>
+</div>
+</body>
+</html>
