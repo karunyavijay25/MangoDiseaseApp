@@ -1,0 +1,57 @@
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+body {
+font-family: 'Segoe UI', sans-serif;
+background: linear-gradient(135deg, #0f2027, #203a43, #2c5364); height: 100vh;
+display: flex;
+justify-content: center; align-items: center; 
+color: white;
+}
+.main-container { width: 90%;
+max-width: 900px;
+}
+.glass-card {
+background: rgba(255, 255, 255, 0.1); padding: 40px;
+border-radius: 20px; backdrop-filter: blur(15px);
+box-shadow: 0 20px 40px rgba(0,0,0,0.4); text-align: center;
+}
+.subtitle {
+margin-bottom: 30px; opacity: 0.8;
+}
+.upload-box { margin: 20px 0;
+}
+.scan-btn {
+padding: 12px 30px; border-radius: 30px; border: none; background: #00c853; color: white;
+font-size: 16px; cursor: pointer;
+transition: 0.3s;
+}
+.scan-btn:hover { background: #00e676; transform: scale(1.05);
+}
+.result .disease-name { font-size: 28px; font-weight: bold; margin: 15px 0; color: #ff5252;
+}
+.confidence {
+margin-bottom: 20px; font-weight: bold;
+}
+.info-grid { display: grid;
+grid-template-columns: 1fr; gap: 15px;
+margin-top: 20px;
+}
+.info-card {
+background: rgba(255,255,255,0.15); padding: 15px;
+border-radius: 15px;
+}
+.back-btn {
+display: inline-block; margin-top: 20px;
+padding: 10px 25px; background: #2979ff; border-radius: 25px; text-decoration: none; color: white;
+}
+.back-btn:hover { background: #448aff;
+}
+ul {
+padding-left: 20px;
+}
+ul li {
+margin-bottom: 10px;
+}
