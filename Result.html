@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Disease Report</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+<script>
+function showSolution() { document.getElementById("solutionBox").style.display = "block";
+}
+</script>
+</head>
+<body>
+<div class="main-container">
+<div class="glass-card result">
+<h2>🌳 Tree Detected: {{ tree }}</h2>
+<h1 class="disease-name">□ {{ disease }}</h1>
+<div class="info-card">
+<h3>Cause</h3>
+<p>{{ cause }}</p>
+</div>
+<div class="info-card">
+<h3>Why It Happened</h3>
+<p>{{ why }}</p>
+</div>
+<div class="info-card">
+<h3>Environmental Condition</h3>
+<p>{{ environment }}</p>
+</div>
+<div class="info-card">
+<h3>Severity Level</h3>
+<p>{{ severity }}</p>
+</div>
+<div class="info-card">
+<h3>Prevention</h3>
+<p>{{ prevention }}</p>
+</div>
+<div id="solutionBox" class="info-card" style="display:none; margin-top:15px;">
+<h3>Recommended Treatment</h3>
+<p>{{ solution }}</p>
+</div>
+<a href="/treatment" class="scan-btn">
+🌱 View Treatment Plan
+</a>
+<a href="/" class="back-btn">Scan Another Tree</a>
+</div>
+</div>
+</body>
+</html>
